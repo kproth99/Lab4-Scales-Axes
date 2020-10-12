@@ -12,15 +12,6 @@ d3.csv("wealth-health-2014.csv", d3.autoType).then((data) => {
          incomeMin = minmax[0];
          incomeMax = minmax[1];
 
-    function sortNumbers(a, b) {
-            return a - b;
-          }
-    populationnumber = d3.extent(WealthHealth.map(function(item){
-            return(item.Population);
-            }))
-
-             populationnumber.sort(sortNumbers);
-             console.log(populationnumber);
     
     const svg = d3.select('.chart').append('svg')
         .attr('width', width+margin.left +margin.right)
