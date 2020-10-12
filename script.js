@@ -18,7 +18,7 @@ d3.csv("wealth-health-2014.csv", d3.autoType).then((data) => {
         .attr('height', height+ margin.top + margin.bottom)
         .append('g')
         .attr('transform', 'translate('+margin.left+','+margin.right+')')
-        
+    
     const xScale = d3.scaleLinear()
         .domain(d3.extent(WealthHealth.map(function(item){
             return(item.Income);
