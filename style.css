@@ -15,15 +15,25 @@ h1 {
 	color: rgba(44, 85, 175, 0.75);
     text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
 }
+
+circle:hover
+  {
+    fill:rgb(32, 32, 105);
+  }
+  
 .tooltip{
 	position: fixed;
 	padding: 5px;
-	display:block;
 	border-radius: 4px;
 	color: white;
 	font-family: 'Staatliches', cursive;
-    background-color: rgb(155, 155, 155);
+	display: block;
 
+}
+
+.tooltip:hover {
+	visibility: visible;
+	opacity: 1;
 }
 
 .legend {

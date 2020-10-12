@@ -78,6 +78,7 @@ d3.csv("wealth-health-2014.csv", d3.autoType).then((data) => {
            d3.select('.tooltip')
              .style("opacity", 1)
              .style("left", (pos[0] + 10 + "px"))
+             .style("background-color", "rgba(44, 85, 175, 0.75)")
              .style("top", (pos[1] + 10 + "px"))
              .html(`Country:  ${d.Country} <br> Life Expectancy:  ${d.LifeExpectancy} <br> Population:  ${d3.format(",d")(d.Population)} <br> Income:  ${d3.format("$,d")(d.Income)}  <br> Region:  ${d.Region}`);
          })
